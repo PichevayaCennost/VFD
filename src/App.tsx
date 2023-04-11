@@ -2,19 +2,23 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 import { HomePage } from './pages/HomePage/HomePage'
-import { StartPage } from './pages/StartPage/StartPage'
+import { RegisterPage } from './pages/RegisterPage/RegisterPage'
+import { LoginPage } from './pages/LoginPage/LoginPage'
 import { Layout } from './layouts/Layout'
 
-import './scss/App.scss'
+import './scss/app.scss';
 
 function App() {
   return (
-    <Layout>
-      <Routes>
-        <Route path='/' element={<StartPage data="bulat" />}></Route>
-        <Route path='/home-page' element={<HomePage data="bulat" />}></Route >
-      </Routes >
-    </Layout>
+    <div className='app'>
+      <Layout>
+        <Routes>
+          <Route path='/' element={<HomePage />}></Route >
+          <Route path='/register' element={<RegisterPage />}></Route >
+          <Route path='/login' element={<LoginPage />}></Route >
+        </Routes >
+      </Layout>
+    </div>
   );
 }
 

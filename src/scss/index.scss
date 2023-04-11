@@ -6,7 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: orangered;
+  //  background-image: url(../assets/start.jpg);
+  //  background-size: 100%;
+  //  background-repeat: no-repeat;
+
+  background: -webkit-linear-gradient(90deg, #3d64ff,#5882fd,#243cf5);background: linear-gradient(90deg, #3d64ff,#5882fd,#243cf5);
+   min-height:100vh;
 }
 
 code {

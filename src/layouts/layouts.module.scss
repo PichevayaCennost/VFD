@@ -1,0 +1,21 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height:100vh;
+
+
+    .wrapper {
+        margin: 10px auto;
+    }
+
+    .header {
+      max-width: 800px;
+      min-width: 700px;
+    }
+    .content {
+        flex: 1 1 auto;
+    }
+
+}

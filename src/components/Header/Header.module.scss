@@ -1,0 +1,51 @@
+.header {
+    height: 50px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        img {
+            height: 60px;
+            width: 60px;
+        }
+    }
+    
+    .search {
+        position: relative;
+        img {
+            height: 25px;
+            width: 25px;
+            opacity: 0.4;
+             
+            position: absolute;
+            left: 10px;
+            top: 6px;
+        }
+         input {
+            height: 25px;
+            border: 0px;
+            border-radius: 20px;
+            padding: 5px 10px 5px 40px;
+            background-color: rgba(80%, 100%, 11%, 1);
+         }
+    }
+    
+    .buttons {
+        * {
+            border: 0px;
+            border-radius: 20px;
+            width: 100px;
+            height: 30px;
+        }
+        .signin {
+            background-color: rgba(28,28,28,0)
+        }
+        .signup {
+            background-color: rgba(80%, 100%, 11%, 1);
+        }
+    
+    }
+}

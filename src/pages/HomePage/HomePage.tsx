@@ -1,10 +1,6 @@
 import React from 'react'
 
-type Props = {
-    data: string;
-}
-
-export const HomePage: React.FC<Props> = (props) => {
+export const HomePage: React.FC = () => {
     return (
         <div>HomePage</div>
     )

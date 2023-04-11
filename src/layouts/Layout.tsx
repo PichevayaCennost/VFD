@@ -1,16 +1,22 @@
 import React from 'react'
 
-import { Navbar } from '../components/Navbar/Navbar'
+import { Header } from '../components/Header/Header'
 import { Footer } from '../components/Footer/Footer'
 
-type Props = {}
+import styles from './layouts.module.scss'
 
-export const Layout = (children: any) => {
-  return (
-    <>
-      <Navbar />
-      {children}
-      <Footer />
-    </>
-  )
+type Props = {
+	children: React.ReactNode
+}
+
+export const Layout = ({ children }: Props) => {
+	return (
+		<div className={styles.layout}>
+			<div className={styles.wrapper}>
+				<div className={styles.header}><Header /></div>
+				<div className={styles.content} >{children}</div>
+			</div>
+			<div className={styles.footer}><Footer /></div>
+		</div>
+	)
 }
